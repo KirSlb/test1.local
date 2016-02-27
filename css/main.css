@@ -56,17 +56,28 @@ header a {
 	min-height: 97px;
 	-webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
 	box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
-	position: absolute;
-	top: 0;
+
 	width: 100%;
 	background-color: rgba(0,0,0,.6);
 	padding: 22px 0;
+}
+.top_line a {
+	font-size: 21px;
+	border-bottom: #fff dashed 1px;
+}
+.top_line a:hover {
+    border-bottom: transparent 1px dashed;
+    -webkit-transform: all .25s;
+    -moz-transform: all .25s;
+    -ms-transform: all .25s;
+    -o-transform: all .25s;
+    transform: all .25s;
 }
 .top_addr {	
 	padding-left: 50px;
 	background-image: url(../img/top_map.png);
 	background-repeat: no-repeat;
-	background-position: center left;
+	background-position: top left;
 	line-height: 26px;		
 }
 .top_addr strong {
@@ -74,9 +85,34 @@ header a {
 	color: #d12f22;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-size: 31px;	
+	font-size: 32px;
 }
-.top_addr a {
-	font-size: 21px;
-	border-bottom: #fff dashed 1px;
+.top_line .logo {
+    border-bottom: none;
+	position: absolute;
+	margin-top: -12px;
+}
+.top_line .logo:hover {
+    border-bottom: none;
+}
+.logo_wrap {
+    position: relative;
+	width: 207px;
+	margin: auto;
+}
+.ta_right {
+	background-image: none;
+	padding-left: 0;
+	text-align: right;
+}
+.ta_right span {
+	color: #fff;
+}
+header h1 {
+	text-align: center;
+	color: #fff;
+	margin-top: 65px;
+	font-size: 40px;
+	text-shadow: rgba(0,0,0,0.55) 0 3px;
+	font-family:"BebasRegular";
 }
