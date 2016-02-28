@@ -117,7 +117,7 @@ header h1 {
 	font-family:"BebasRegular";
 }
 .button {
-	background-color: #d12f22;
+    background-color: #d12f22;
 	display: inline-block;
 	font-size: 20px;
 	height: 50px;
@@ -221,4 +221,64 @@ header .button {
 .w_left span {
 	font-size: 34px;
 	font-family: "BebasBold";
+}
+.main_cats {
+    background-color: #191919;
+    padding: 20px 0 32px;
+}
+.main_cats h2 {
+    text-transform: uppercase;
+    color: #c9c9c9;
+    font-family:"BebasRegular";
+    font-size: 40px;
+    text-align: center;
+
+}
+.main_cats h2 strong {
+    color: #fff;
+}
+.main_cats h2 span {
+    color: #d12f22;
+}
+section h2 {
+    position: relative;
+}
+.s_black h2::before {
+    background-image: url("../img/header_imgset.png");
+    content: "";
+    height: 20px;
+    margin-left: -68px;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+}
+.s_black h2::after {
+    background-image: url("../img/header_imgset.png");
+    background-position: -50px 0;
+    content: "";
+    height: 20px;
+    margin-left: 18px;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+}
+.mc_item {
+    border: #353535 1px solid;
+    border-radius: 2px;
+}
+.mc_item span {
+	display: block;
+	height: 85px;
+	width: 130px;
+	background-image: url(../img/cat_iconset.png);
+
+}
+.mc_item_wrap {
+    width: 158px;
+    margin-left: 30px;
+	display: inline-block;
+    text-align: center;
+}
+.mc_item_wrap a {
+    color: #fff;
 }
