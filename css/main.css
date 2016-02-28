@@ -67,11 +67,11 @@ header a {
 }
 .top_line a:hover {
     border-bottom: transparent 1px dashed;
-    -webkit-transform: all .25s;
-    -moz-transform: all .25s;
-    -ms-transform: all .25s;
-    -o-transform: all .25s;
-    transform: all .25s;
+    -webkit-transform: all 0.25s;
+    -moz-transform: all 0.25s;
+    -ms-transform: all 0.25s;
+    -o-transform: all 0.25s;
+    transform: all 0.25s;
 }
 .top_addr {	
 	padding-left: 50px;
@@ -262,6 +262,10 @@ section h2 {
     top: 20px;
     width: 50px;
 }
+.mc_wrap {
+	text-align: center;
+	padding: 0;
+}
 .mc_item {
     border: #353535 1px solid;
     border-radius: 2px;
@@ -271,14 +275,41 @@ section h2 {
 	height: 85px;
 	width: 130px;
 	background-image: url(../img/cat_iconset.png);
-
+	margin: 15px auto 0;
 }
 .mc_item_wrap {
-    width: 158px;
+    width: 160px;
     margin-left: 30px;
 	display: inline-block;
     text-align: center;
 }
+.mc_item_wrap:nth-child(1) {
+	margin-left: 0;
+}
+.mc_item_wrap:nth-child(1) span {
+	background-position: 13px 0;
+}
+.mc_item_wrap:nth-child(2) span {
+	background-position: -123px 0;
+}
+.mc_item_wrap:nth-child(3) span {
+	background-position: -259px 0;
+}
+.mc_item_wrap:nth-child(4) span {
+	background-position: -396px 0;
+}
+.mc_item_wrap:nth-child(5) span {
+	background-position: -531px 0;
+}
+.mc_item_wrap:nth-child(6) span {
+	background-position: -666px 0;
+}
 .mc_item_wrap a {
     color: #fff;
+}
+.mc_item h4 {
+	font-family:"BebasBold";
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 8px;
 }
