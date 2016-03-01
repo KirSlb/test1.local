@@ -34,7 +34,7 @@ $(document).ready(function() {
 	//equalheight - одинаковая высота колонок
 	//Пример списка элементов:
 	//var eqElement = ".cat_container > div, .home_news > div"
-	var eqElement = ".element"
+	var eqElement = ".hi_item"
 	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
 
 	//Masked Input Plugin
