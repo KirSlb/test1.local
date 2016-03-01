@@ -125,6 +125,8 @@ header h1 {
 	padding: 0 25px;
 	vertical-align: middle;
 	border-bottom:#ac160a 4px solid;
+	color: #fff;
+	font-family:"BebasBold";
 }
 .button:hover {
 	background-color: #e64437;
@@ -224,9 +226,10 @@ header .button {
 }
 .main_cats {
     background-color: #191919;
-    padding: 20px 0 32px;
+    padding: 20px 0 40px;
 }
-.main_cats h2 {
+.main_cats h2,
+h2.art_header {
     text-transform: uppercase;
     color: #c9c9c9;
     font-family:"BebasRegular";
@@ -240,7 +243,8 @@ header .button {
 .main_cats h2 span {
     color: #d12f22;
 }
-section h2 {
+section h2,
+article h2 {
     position: relative;
 }
 .s_black h2::before {
@@ -261,6 +265,25 @@ section h2 {
     position: absolute;
     top: 20px;
     width: 50px;
+}
+article h2.art_header::before {
+	background-image: url("../img/art_header_imgset.png");
+	content: "";
+	height: 20px;
+	margin-left: -68px;
+	position: absolute;
+	top: 20px;
+	width: 50px;
+}
+article h2.art_header::after {
+	background-image: url("../img/art_header_imgset.png");
+	background-position: -50px 0;
+	content: "";
+	height: 20px;
+	margin-left: 18px;
+	position: absolute;
+	top: 20px;
+	width: 50px;
 }
 .mc_wrap {
 	text-align: center;
@@ -369,4 +392,18 @@ section h2 {
 }
 .mc_item_wrap.active > ul li a:hover {
 	text-decoration: none;
+}
+.mc_button_wrap {
+	text-align: center;
+	margin-top: 30px;
+}
+article .art_header {
+	color: #050505;
+	margin-bottom: 10px;
+}
+p.h_desc {
+	max-width:790px;
+	text-align: center;
+	margin: auto;
+	color: #050505;
 }
